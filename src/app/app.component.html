@@ -1,1 +1,32 @@
+<p [ngSwitch]="title">
+    <ng-container *ngSwitchCase="'ejemplo'">
+        Muy original
+    </ng-container>
+    <ng-container *ngSwitchCase="'título'">
+        Te has dejado la piel para pensarlo
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+        Pues vale
+    </ng-container>
+</p>
+
+<p [ngSwitch]="title==='ejemplos'">
+    <ng-container *ngSwitchCase="true">
+        Cámbialo, venga
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+        Así me gusta
+    </ng-container>
+</p>
+
+<p *ngIf="title==='ejemplos'; else bloqueElse">
+    Cámbialo, venga
+</p>
+
+<ng-template #bloqueElse>
+    Así me gusta
+</ng-template>
+
+<h1>Desde AppComponent: {{title}}</h1>
+<app-rotulo [(texto)]="title"></app-rotulo>
 <app-titulo></app-titulo>

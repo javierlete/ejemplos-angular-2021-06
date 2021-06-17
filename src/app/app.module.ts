@@ -7,13 +7,15 @@ import { TituloComponent } from './titulo.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { RotuloComponent } from './rotulo.component';
 
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
     AppComponent,
-    TituloComponent
+    TituloComponent,
+    RotuloComponent
   ],
   imports: [
     BrowserModule,
