@@ -8,6 +8,7 @@ import { TituloComponent } from './titulo.component';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import { RotuloComponent } from './rotulo.component';
+import { MayusculatorPipe } from './mayusculator.pipe';
 
 registerLocaleData(localeEs);
 
@@ -15,7 +16,8 @@ registerLocaleData(localeEs);
   declarations: [
     AppComponent,
     TituloComponent,
-    RotuloComponent
+    RotuloComponent,
+    MayusculatorPipe
   ],
   imports: [
     BrowserModule,
