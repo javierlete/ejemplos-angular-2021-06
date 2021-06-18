@@ -13,6 +13,7 @@ import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { FormsModule } from '@angular/forms';
+import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
 
 registerLocaleData(localeEs);
 
@@ -24,7 +25,8 @@ registerLocaleData(localeEs);
     MayusculatorPipe,
     HighlightDirective,
     UnlessDirective,
-    HeroFormComponent
+    HeroFormComponent,
+    FormReactivoComponent
   ],
   imports: [
     BrowserModule,
