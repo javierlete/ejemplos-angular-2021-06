@@ -12,7 +12,7 @@ import { MayusculatorPipe } from './mayusculator.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
 import { HeroFormComponent } from './hero-form/hero-form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
 
 registerLocaleData(localeEs);
@@ -31,7 +31,8 @@ registerLocaleData(localeEs);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-ES'},
