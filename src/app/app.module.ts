@@ -10,6 +10,7 @@ import localeEs from '@angular/common/locales/es';
 import { RotuloComponent } from './rotulo.component';
 import { MayusculatorPipe } from './mayusculator.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 registerLocaleData(localeEs);
 
@@ -19,7 +20,8 @@ registerLocaleData(localeEs);
     TituloComponent,
     RotuloComponent,
     MayusculatorPipe,
-    HighlightDirective
+    HighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
