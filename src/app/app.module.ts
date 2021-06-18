@@ -11,6 +11,8 @@ import { RotuloComponent } from './rotulo.component';
 import { MayusculatorPipe } from './mayusculator.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { UnlessDirective } from './unless.directive';
+import { HeroFormComponent } from './hero-form/hero-form.component';
+import { FormsModule } from '@angular/forms';
 
 registerLocaleData(localeEs);
 
@@ -21,11 +23,13 @@ registerLocaleData(localeEs);
     RotuloComponent,
     MayusculatorPipe,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    HeroFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-ES'},
