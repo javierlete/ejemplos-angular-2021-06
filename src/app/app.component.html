@@ -1,3 +1,13 @@
+<p *appUnless="false">Se ve</p>
+<ng-template [appUnless]="false">
+  <p>Se ve</p>
+</ng-template>
+
+<p *appUnless="true">No se ve</p>
+<ng-template [appUnless]="true">
+  <p>No se ve</p>
+</ng-template>
+
 <h1>My First Attribute Directive</h1>
 
 <h2>Pick a highlight color</h2>
